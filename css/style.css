@@ -1,0 +1,323 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1, div, h1, h2, h3, p, a, ul, li, img, label,form{
+	margin: 0;
+	padding: 0;
+	display: block;
+	box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:target {
+    text-decoration-line: underline overline;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 10px 0px 3px black;
+    z-index: 1000;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: brown;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: end;
+    width: 300px;
+    align-items: center;
+}
+
+.welcome {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../img/kharkiv.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome__text{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.welcome__title {
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 64px;
+    max-width: 400px;
+}
+
+.welcome__subtitle {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 16px;
+}
+
+.comments__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comment {
+    margin: 15px auto;
+    width: 300px;
+    font-size: 16px;
+}
+
+.comment__title {
+    font-size: 24px;
+}
+
+.more__links {
+    margin: 0 auto;
+    display: flex;
+}
+
+.more__links__item {
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    width: 25%;
+    height: 130px;
+    text-align: center;
+    border: 2px solid #8d8d8d;
+}
+
+.more__links__item a {
+    transition: all 0.2s;
+    line-height: 120px;
+    height: 130px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.more__links__item:hover {
+    width: 30%;
+}
+
+.more__links__item:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../img/kharkiv.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.more__links__item:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../img/kharkiv2.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.more__links__item:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../img/kharkiv3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.more__links__item:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../img/kharkiv4.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer {
+    background-color: #272727;
+}
+
+.footer__wrapper {
+    color: #ffffff;
+}
+
+.footer__title {
+    margin: 15px auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer__list {
+    margin: auto 0;
+}
+
+.footer__info__img {
+    margin-left: 10px;
+    width: 300px;
+    height: 200px;
+    background: url(../img/kharkiv2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__creator {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+/* tour.html */
+
+.tourSlider__slider__item_1, 
+.tourSlider__slider__item_2, 
+.tourSlider__slider__item_3 {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* info.html */
+
+.timeline__wrapper {
+    padding-top: 200px;
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted brown;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted brown;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: brown;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+/* menu.html */
+
+.menu__wrapper {
+    padding-top: 100px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu__article {
+    margin: 15px auto;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #272727;
+    border-radius: 10px;
+}
+
+.menu__article__img {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background: url(../img/cola.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #272727;
+    border-radius: 20px;
+}
+
+.menu__article__name {
+    text-align: center;
+    font-size: 24px;
+}
+
+.menu__article__description {
+    text-align: center;
+    font-size: 16px;
+}
+
+.menu__article__price {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* registration.html */
+
+.registration {
+    height: 100vh;
+}
+
+.registration__wrapper {
+    padding-top: 100px;
+}
