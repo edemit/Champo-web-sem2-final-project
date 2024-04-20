@@ -198,10 +198,21 @@ a:target {
     object-fit: cover;
 }
 
+.description__title {
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.description__text {
+    padding: 20px;
+    font-size: 16px;
+}
+
 /* info.html */
 
 .timeline__wrapper {
-    padding-top: 200px;
+    padding: 200px 0;
 }
 
 .timeline-steps {
@@ -319,5 +330,8 @@ a:target {
 }
 
 .registration__wrapper {
-    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
